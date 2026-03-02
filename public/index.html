@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Parque Temático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1516051773129-983bdf033697?q=80&w=2070'); /* Fundo de Parque */
+            background-size: cover;
+            display: flex;
+            content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        h1 { color: #2c3e50; }
+        
+        /* Customização da cor do Chatbot */
+        df-messenger {
+           --df-messenger-bot-message: #878fac;
+           --df-messenger-button-titlebar-color: #2c3e50;
+           --df-messenger-chat-background-color: #fafafa;
+           --df-messenger-font-color: white;
+           --df-messenger-send-icon: #878fac;
+           --df-messenger-user-message: #479b3d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎡 Bem-vindo ao Parque!</h1>
+        <p>Precisa de ajuda? Fale com nosso suporte no canto inferior direito.</p>
+    </div>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="ChamadosParque"
+    agent-id="cc958486-9cf1-4ce7-b441-dbb2858c7c20"
+    language-code="pt-br"
+    ></df-messenger>
+
+</body>
+</html>
